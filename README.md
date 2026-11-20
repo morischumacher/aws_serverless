@@ -1,3 +1,15 @@
+# Cloud-Native E-Learning Platform on AWS
+
+## At a glance
+
+| | |
+|---|---|
+| **What** | A serverless e-learning platform: users sign up, solve generated maths exercises (addition, multiplication, derivatives) and see their results. Course project in Advanced Internet Computing, TU Wien. |
+| **My role** | Team of four. First author of the technical report; co-wrote the sections on design decisions, implementation and evaluation. |
+| **Highlights** | Infrastructure as Code with the AWS CDK.<br>Amazon Cognito for sign-up and login, API Gateway and Lambda, exercise generation via SNS and SQS, results computed with DynamoDB Streams, pictures in S3.<br>Runs fully locally on LocalStack with one `docker compose up`.<br>Measured deployment times and the serverless cold-start effect: first requests took up to about 4 s, repeat requests under 1 s. |
+| **Stack** | Python (AWS Lambda, AWS CDK), Flutter, LocalStack, Docker |
+| **Docs** | [Technical report (PDF)](report/AIC_Report_T2.pdf) |
+
 ### Getting started
 
 1. Run in project root directory:
